@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+/* CSS RESET Begins */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+/*  border: 1px dotted grey; */
+	font-size: 62.5%;
+	font: inherit;
+  letter-spacing:1px;
+  vertical-align: baseline;
+  font-family:'Roboto Mono';
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.5;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* CSS RESET ----------------------- */
+
+/* every element is a border-box */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* start your css here */
+
+body {
+  font-family:'Roboto Mono', monospace;
+  font-size:62.5%;
+  text-align:center;
+  max-width:100%;
+   /* margin:2% auto; */
+  margin:0;
+}
+.container {
+	width: 100%;
+	margin:0;
+  padding:0;
+  font-size:1.5rem;
+ /* letter-spacing: -50px;*/
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center; /* step 6 */
+}
+
+.mynav li {
+  display: inline-block; /* step 1  stay on same line */
+  width:30%;
+ /* width: 33.3%; /* step 4 */
+ /* margin-right: -1.5rem; /* step 5 */
+}
+
+.mynav a {
+  display: block; /* step 2 */
+  text-decoration: none; /* step 3 */
+  border: 1px solid lightgray;
+  border-radius: 1rem; /*10px*/
+  color:white;
+  margin-left:30%;
+  margin-top:2%;
+  padding:2%;
+  width:50%;
+  height:5rem;
+  transition: .3s background-color;
+  text-align:center;
+  line-height: 110%;
+}
+
+.mynav a:hover {
+  background-color: #005f5f;
+  /*scale transform to increase the size of element */
+  transform:scale(1.2);
+ /* box-shadow:1% 1% 4% #005f5f; */
+   box-shadow:5px 5px 20px 5px #86bbbb;
+}
+ 
+.mynav a.active {
+  background-color: #eee;
+  cursor: default;
+}
+ 
+
+.topimg {
+  margin-top:2rem;
+  margin-left:0rem;
+  vertical-align: top;
+  width: 20%;
+  border-radius: 50%;
+  display:inline-block;
+ }
+
+.maininfo{
+    width:60%;
+    display:inline-block;
+    padding-top:4rem;
+}
+h1{
+   font-family:'Chelsea Market', cursive;
+   text-align:center;
+   font-size:3.5rem;
+   padding-bottom:1rem;
+   color:black;
+  /* My animation */
+  animation-name:myanim;
+  animation-duration:3s;
+  animation-timing-function:ease-in-out;
+  animation-delay:2s; /*wait before start of animation */
+  animation-iteration-count:infinite; /* name,duration, timing function,delay,count */
+}
+/* keyframes rule to specify animation code */
+@keyframes myanim{
+  0%{
+  color:  grey;
+  transform: skewY(1deg);}
+  40%{ 
+  color: gold;
+  transform: skewY(1deg);}  
+  70%,75%{
+   color: khaki; 
+   transform: skewY(2deg);
+  }
+   80%,90%,95%{
+    color: goldenrod;
+    transform: skewY(1deg);
+  }
+  100%{
+    color:black;
+    transform: skewY(0deg);
+  }
+}
+h2{
+  width:70%;
+  margin:0 auto;
+  font-size:1.1rem;
+  padding-bottom:1rem;
+  font-weight: bold;
+}
+.parkstatus{
+  width:55%;
+  margin:0 auto;
+  font-size:1.1rem;
+  font-weight: bold;
+}
+ 
+ .detail{
+  background-color:#DDB9A3;
+  color:white;
+  width:90%;
+  margin:2% auto;
+  text-align:center;
+  font-size:1.25rem;  
+  padding:1%;
+  line-height: 110%;
+}
+p{
+  padding:1%
+}
+
+.planVisit{
+  background-color:#ff764e;
+}
+
+.learnPark{
+  background-color: #5ed3eb;
+}
+
+.involveIn{
+  background-color:#ffcd69;
+}
+
+.icon .firePic{
+ display: block;
+  margin: 0 auto;
+  width: 50%;
+  height:10rem;
+  width:10rem;
+}
+
+.fireDesc{
+  width: 20%;
+  margin: 0 auto;
+  text-align: center;
+  padding:1%;
+}
+
+.icon .vehicle{
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  height:10rem;
+  width:10rem;
+}
+.vehicleDesc{
+  width: 20%;
+  margin: 0 auto;
+  text-align: center;
+  padding:0.5%;
+  margin-bottom:5rem;
+}
+
+span{
+   font-weight: bold;
+}
+
+.footerImg {
+  height: 20rem;
+  width: 100%; 
+  margin:auto;
+  padding-bottom:2rem;
+}
+ 
+footer {
+  background-color:#F9E7DC;
+  padding-bottom:2rem;
+}
