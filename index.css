@@ -14,7 +14,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-  /*border: 1px dotted grey; */
+  border: 0.5px dotted grey; 
 	font-size: 62.5%;
 	font: inherit;
   letter-spacing:1px;
@@ -78,7 +78,7 @@ body {
 
 .mynav li {
   display: inline-block; /* stay on same line for all li elements */
-  width:29%; /* here 3 nav tabs */
+  width:30%; /* here 3 nav tabs */
  /* width: 33.3%; check*/
  }
 
