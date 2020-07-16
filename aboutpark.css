@@ -115,22 +115,18 @@ body {
   cursor: default;
 }
  
-
-.topimg {
-  margin-top:2rem;
-  margin-left:2rem;
-  display:inline-block;
-  border-radius: 50%;
-  vertical-align:top;
-  width:25%;
-  }
-
-.maininfo{
-    width:60%;
-    display:inline-block;
-    margin-top: 4rem;
+.gallery {
+    display:block;
+    margin:1rem;
 }
-h1{
+.nitepic{
+    border-radius:15%;
+    width:30%;
+    height:30%;
+    padding:2%;
+    }
+  
+ h1{
    font-family:'Chelsea Market', cursive;
    text-align:center;
    font-size:3.5rem;
@@ -167,7 +163,7 @@ h1{
 h2{
   width:70%;
   margin:0 auto;
-  font-size:1.1rem;
+  font-size:2rem;
   padding-bottom:1rem;
   font-weight: bold;
 }
