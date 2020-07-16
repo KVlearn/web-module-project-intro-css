@@ -1,4 +1,6 @@
- /* CSS RESET Begins */
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+/* CSS RESET Begins */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -14,13 +16,13 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
- /* border: 0.5px dotted grey; */
+/*  border: 1px dotted grey; */
 	font-size: 62.5%;
 	font: inherit;
   letter-spacing:1px;
   vertical-align: baseline;
   font-family:'Roboto Mono',serif;
- }
+}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -48,14 +50,14 @@ table {
 /* CSS RESET section ENDS */
 
 /* every element is a border-box */
-*{
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
 /* start your css here */
 
 body {
-  font-family: 'Roboto Mono', monospace;
+  font-family:'Roboto Mono', monospace;
   font-size:62.5%;
   text-align:center;
   max-width:100%;
@@ -67,33 +69,36 @@ body {
 	margin:0;
   padding:0;
   font-size:1.5rem;
+ /* letter-spacing: -50px;*/
 }
 
 .nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  text-align: center; /* center */
+  text-align: center; /* step 6 */
 }
 
 .mynav li {
-  display: inline-block; /* stay on same line for all li elements */
-  width:29%; /* here 3 nav tabs */
- /* width: 33.3%; check*/
- }
+  display: inline-block; /* step 1  stay on same line */
+  width:30%;
+ /* width: 33.3%; /* step 4 */
+ /* margin-right: -1.5rem; /* step 5 */
+}
 
 .mynav a {
-  display: block; /* all a element will be displayed block to contol width height and padding*/
-  text-decoration: none;
+  display: block; /* step 2 */
+  text-decoration: none; /* step 3 */
+  border: 1px solid lightgray;
   border-radius: 1rem; /*10px*/
   color:white;
-  margin-left:40%;
+  margin-left:30%;
   margin-top:10%;
   padding:2%;
   width:50%;
   height:5rem;
   transition: .3s background-color;
-  text-align:center; /* center */
+  text-align:center;
   line-height: 110%;
 }
 
@@ -101,27 +106,27 @@ body {
   background-color: #005f5f;
   /*scale transform to increase the size of element */
   transform:scale(1.2);
- /* box-shadow:1% 1% 4% #005f5f; doesnt work with % so used px*/
+ /* box-shadow:1% 1% 4% #005f5f; */
    box-shadow:5px 5px 20px 5px #86bbbb;
 }
  
-
-.topimg {
-  margin-top:2rem;
-  margin-left:2rem;
-  display:inline-block;
-  border-radius: 50%;
-  vertical-align:top;
-  width:25%;
-  }
-
-.maininfo{
-    width:60%;
-    display:inline-block; /*so it appears on the same line as pic */
-    margin-top: 4rem;
-    font-weight: 500;
+.mynav a.active {
+  background-color: #eee;
+  cursor: default;
+}
+ 
+.gallery {
+    display:block;
+    margin:1rem;
+}
+.nitepic{
+    border-radius:15%;
+    width:30%;
+    height:30%;
+    padding:2%;
     }
-h1{
+  
+ h1{
    font-family:'Chelsea Market', cursive;
    text-align:center;
    font-size:3.5rem;
@@ -158,27 +163,11 @@ h1{
 h2{
   width:70%;
   margin:0 auto;
-  font-size:1.1rem;
+  font-size:2rem;
   padding-bottom:1rem;
-  font-weight: 500;
-  }
-.parkstatus{
-  width:55%;
-  margin:0 auto;
-  font-size:1.2rem;
-  font-weight: 500; 
+  font-weight: bold;
 }
  
- .detail{
-  background-color:#DDB9A3;
-  color:white;
-  width:90%;
-  margin:2% auto;
-  text-align:center;
-  font-size:1.25rem;  
-  padding:1%;
-  line-height: 120%;
-}
 p{
   padding:1%
 }
@@ -194,46 +183,10 @@ p{
 .involveIn{
   background-color:#ffcd69;
 }
-
-.icon .firePic{
- display: block; /*appear as stack..and occupy the entire line */
-  margin: 0 auto; /* horizontally center the element within container */
-  width: 50%;
-  height:10rem;
-  width:10rem;
-}
-
-.fireDesc{
-  width: 30%;
-  font-size:1rem;
-  margin: 0 auto;
-  text-align: center;
-  padding:1%;
-}
-
-.icon .vehicle{
-  display: block;
-  margin: 0 auto;
-  width: 50%;
-  height:10rem;
-  width:10rem;
-}
-.vehicleDesc{
-  width: 30%;
-  font-size:1rem;
-  margin: 0 auto;
-  text-align: center;
-  padding:0.5%;
-  margin-bottom:5rem;
-   }
-
-span{
-   font-weight: bold;
-}
-
+ 
 .footerImg {
-  height:20rem;
-  width:100%; 
+  height: 20rem;
+  width: 100%; 
   margin:auto;
   padding-bottom:2rem;
 }
