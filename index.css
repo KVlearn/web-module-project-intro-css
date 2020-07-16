@@ -14,7 +14,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-/*  border: 1px dotted grey; */
+  /*border: 1px dotted grey; */
 	font-size: 62.5%;
 	font: inherit;
   letter-spacing:1px;
@@ -87,14 +87,14 @@ body {
   text-decoration: none;
   border-radius: 1rem; /*10px*/
   color:white;
-  margin-left:40%;
+  margin-left:35%;
   margin-top:10%;
-  padding:2%;
+  padding:2.5%;
   width:50%;
   height:5rem;
   transition: .3s background-color;
   text-align:center; /* center */
-  line-height: 120%;
+  line-height: 110%;
 }
 
 .mynav a:hover {
